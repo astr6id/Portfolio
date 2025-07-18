@@ -34,45 +34,40 @@ header p {
 
 nav.navbar {
   display: flex;
-  justify-content: space-between; /* links left, socials right */
+  justify-content: center; /* center nav links horizontally */
   align-items: center;
   flex-wrap: wrap;
-  padding: 10px 20px; /* optional for spacing */
+  margin-bottom: 10px; /* space below nav */
 }
 
-.nav-links a,
-.nav-socials a {
+.nav-links a {
   color: #ff2c2c;
   text-decoration: none;
-  margin: 0 10px;
+  margin: 0 15px;
   font-weight: 600;
   font-size: 1.1rem;
-  transition: color 0.3s ease, transform 0.2s ease, opacity 0.2s ease;
+  transition: color 0.3s ease;
 }
 
-.nav-links a:hover,
-.nav-socials a:hover {
+.nav-links a:hover {
   color: #ff5252;
-  transform: scale(1.1);
-  opacity: 0.8;
 }
 
 .nav-socials {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  justify-content: center; /* center social icons */
+  gap: 20px; /* space between icons */
+  margin-top: 10px;
 }
 
-.nav-socials a i {
-  font-size: 1.3rem;
+.nav-socials a {
+  color: #ff2c2c;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
 }
 
-.social-icon {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%; /* makes booth icon rounded */
-  object-fit: cover;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+.nav-socials a:hover {
+  color: #ff5252;
 }
 
 
