@@ -104,6 +104,52 @@ section h2 {
   transform: scale(1.05);
 }
 
+
+.roadmap-item {
+  background-color: #1a1a1a;
+  border-left: 5px solid #ff2c2c;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(255, 44, 44, 0.4);
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.roadmap-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.roadmap-text h3 {
+  color: #ff2c2c;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.roadmap-text p {
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .roadmap-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .roadmap-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
 /* Testimonials */
 #testimonials {
   max-width: 700px;
