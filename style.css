@@ -6,16 +6,14 @@
 }
 
 body {
-  background-color: #121212;
+  background-color: #000000;
   color: #f1f1f1;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   padding: 20px;
 }
 
-div {
-  margin-bottom: 20px; /* adds 20px space below each div */
-}
+
 
 header {
   text-align: center;
@@ -48,8 +46,14 @@ nav a:hover {
 }
 
 main {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto 60px auto;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 10px;
+  padding-top: 25px;
+  border-radius: 25px;
+  background-color: #121212;
 }
 
 section {
@@ -70,6 +74,7 @@ section h2 {
   display: flex;
   overflow-x: auto;
   gap: 15px;
+  margin-bottom: 25px;
   padding-bottom: 10px;
   scroll-behavior: smooth;
 }
@@ -114,6 +119,7 @@ section h2 {
   gap: 15px;
   align-items: center;
   padding: 15px 20px;
+  margin-bottom: 15px;
 }
 
 .roadmap-item img {
@@ -153,6 +159,8 @@ section h2 {
   max-width: 700px;
   margin: 40px auto;
   color: #eee;
+  background-color: #171717;
+  border-radius: 10px;
   padding: 0 15px;
 }
 
@@ -189,7 +197,7 @@ section h2 {
 }
 
 .testimonial-item {
-  background-color: #1a1a1a;
+  background:linear-gradient(rgb(28, 13, 13), rgb(9, 9, 9));
   border-radius: 10px;
   padding: 20px;
   display: flex;
@@ -347,6 +355,7 @@ section h2 {
 }
 
 
+/* Project Carousel Section */
 #project-carousel {
   padding: 40px 20px;
   background-color: #111;
@@ -356,14 +365,19 @@ section h2 {
   text-align: center;
   color: #ff2c2c;
   margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
+/* Carousel Container */
 .carousel {
   display: flex;
-  overflow-x: auto;
+  flex-wrap: wrap;
   gap: 20px;
-  scroll-snap-type: x mandatory;
-  padding-bottom: 10px;
+  justify-content: center;
+  perspective: 1000px; /* Enables 3D transforms on children */
+  scrollbar-width: thin;
+  scrollbar-color: #ff2c2c transparent;
 }
 
 .carousel::-webkit-scrollbar {
@@ -375,32 +389,42 @@ section h2 {
   border-radius: 4px;
 }
 
+/* Individual Project Card */
 .project-card {
   background-color: #1a1a1a;
   border-radius: 10px;
-  min-width: 250px;
+  width: 250px;
   max-width: 300px;
-  flex: 0 0 auto;
-  box-shadow: 0 0 5px rgba(255, 44, 44, 0.4);
+  box-shadow: 0 0 10px rgba(255, 44, 44, 0.4);
   padding: 15px;
-  scroll-snap-align: start;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
 }
 
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 44, 44, 0.6);
+}
+
+/* Project Card Title */
 .project-card h3 {
   color: #ff2c2c;
   font-size: 1.2rem;
   margin-bottom: 8px;
 }
 
+/* Project Card Image */
 .project-card img {
-  width: 100%;          
-  height: 200px;       
-  object-fit: cover;    
-  display: block;        
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
   border-radius: 8px;
+  margin-bottom: 10px;
 }
 
-
+/* Project Details Section */
 .project-details h4 {
   color: #ff2c2c;
   margin: 8px 0 4px;
@@ -415,10 +439,12 @@ section h2 {
   line-height: 1.3;
 }
 
+/* Project Details List Styling */
 .project-details ul {
   list-style: disc;
   padding-left: 18px;
 }
+
 
 
 #backToTop {
@@ -513,6 +539,12 @@ section h2 {
   background-color: #e52b2b;
 }
 
+
+.gif-pref {
+  border-radius: 10px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
 
 
 a {
