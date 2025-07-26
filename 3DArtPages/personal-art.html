@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/png" href="../Images/Logo.png">
+  <title>Personal 3D Art | Lifeportz Portfolio</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../3d-modeling.html">3D Modeling</a>
+        <a href="../3d-art.html">3D Art</a>
+        <a href="../level-design.html">Level Design</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+    </nav>
+    <div class="nav-socials">
+      <a href="https://lifeport-z.booth.pm/" target="_blank"><i class="fas fa-shopping-cart"></i></a>
+      <a href="https://www.instagram.com/lifeportz/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com/Lifeportz" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/thomasbrown-lifeportz/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/astr6id" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Personal 3D Art Gallery</h2>
+
+      <div class="art-gallery">
+        <div class="art-card" onclick="openModal('Projection', '../model_IMG/Makeshift Projector.png', `
+          <p>This piece, titled <strong>Projection</strong>, captures the essence of nostalgia and analog memory.</p>
+          <img src='../model_IMG/Makeshift Projector.png' alt='Projection' />
+          <p>The makeshift projector casts a soft image, reminiscent of past lives and forgotten technologies. It speaks to a time when information was light and stories flickered on walls instead of screens.</p>
+        `)">
+          <img src="../model_IMG/Makeshift Projector.png" alt="Fokie Projection">
+          <div class="title-bar"><h3>Projection</h3></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h2 id="modal-title"></h2>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Lifeportz. All rights reserved.</p>
+  </footer>
+
+  <script>
+    window.onload = () => {
+      const modal = document.getElementById("modal");
+      const modalTitle = document.getElementById("modal-title");
+      const modalBody = document.getElementById("modal-body");
+
+      window.openModal = function(title, imgSrc, htmlContent) {
+        modalTitle.textContent = title;
+        modalBody.innerHTML = htmlContent;
+        modal.style.display = "flex";
+      };
+
+      window.closeModal = function() {
+        modal.style.display = "none";
+      };
+
+      window.onclick = function (event) {
+        if (event.target === modal) {
+          closeModal();
+        }
+      };
+    };
+  </script>
+</body>
+</html>

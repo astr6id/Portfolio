@@ -70,7 +70,54 @@ nav.navbar {
   color: #ff5252;
 }
 
+.subcategory-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin: 10px 0;
+  box-shadow: 0 0 8px rgba(255, 44, 44, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
+.subcategory-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 12px rgba(255, 44, 44, 0.6);
+}
+
+.subcategory-info h3 {
+  color: #ff2c2c;
+  margin: 0 0 5px;
+  font-size: 1.2rem;
+}
+
+.subcategory-info p {
+  color: #ccc;
+  margin: 0;
+  font-size: 0.9rem;
+  max-width: 400px;
+}
+
+.go-button {
+  background-color: #ff2c2c;
+  color: white;
+  border-radius: 3%;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.go-button:hover {
+  background-color: #ff5252;
+  transform: scale(1.1);
+}
+
+.go-button i {
+  pointer-events: none; /* icon doesn't trigger link default behaviour */
+}
 
 main {
   max-width: 1200px;
@@ -150,8 +197,8 @@ section h2 {
 }
 
 .roadmap-item img {
-  width: 80px;
-  height: 80px;
+  width: 40%;
+  height: 1000px;
   object-fit: cover;
   border-radius: 6px;
   flex-shrink: 0;
@@ -353,8 +400,8 @@ section h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  max-width: 700px; 
+  width: auto;
+  height: 500px;
   margin: auto;
 }
 
@@ -362,6 +409,169 @@ section h2 {
   background-color: #121212; 
   border: none;
   border-radius: 10px;
+}
+
+.contact-section {
+  background-color: #0a0a0a;
+  color: #fff;
+  padding: 80px 20px;
+  border-radius: 100px;
+  text-align: center;
+}
+
+.contact-section .container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-section h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-size: 1em;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form label {
+  text-align: left;
+  font-size: 0.9em;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 10px;
+  background: #222;
+  border-radius: 10px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #555;
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #ddd;
+}
+
+
+
+
+.art-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px;
+  justify-content: center;
+}
+
+.art-card {
+  width: 300px;
+  height: 220px;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255, 44, 44, 0.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.art-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.art-card:hover img {
+  transform: scale(1.05);
+}
+
+.title-bar {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 15px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.title-bar h3 {
+  margin: 0;
+  color: #ff2c2c;
+  font-size: 1.1rem;
+}
+
+/* Modal Styles */
+/* Modal wrapper */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.modal-content img {
+  max-width: 100%;
+  width: 100%;
+  height: 500px;
+  border-radius: 8px;
+  margin-top: 10px;
+  object-fit: cover;
+}
+
+/* Modal content box */
+.modal-content {
+  background-color: #111;
+  padding: 2rem;
+  max-width: 800px;
+  width: 90%;
+  border-radius: 12px;
+  color: #fff;
+  position: relative;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #ff3c3c;
+}
+
+.close-btn:hover {
+  color: #fff;
 }
 
 

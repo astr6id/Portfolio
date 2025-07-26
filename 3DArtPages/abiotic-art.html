@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" href="../Images/Logo.png">
+    <title>Abiotic 3D Art | Lifeportz Portfolio</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+
+  <body>
+
+  <header>
+    <nav class="navbar">
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../3d-modeling.html">3D Modeling</a>
+        <a href="../3d-art.html">3D Art</a>
+        <a href="../level-design.html">Level Design</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+    </nav>
+    <div class="nav-socials">
+      <a href="https://lifeport-z.booth.pm/" target="_blank"><i class="fas fa-shopping-cart"></i></a>
+      <a href="https://www.instagram.com/lifeportz/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com/Lifeportz" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/thomasbrown-lifeportz/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/astr6id" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Abiotic 3D Art Gallery</h2>
+
+      <div class="art-gallery">
+        <div class="art-card" onclick="openModal('Abiotics Renaissance', '../art_IMG/Abioticrenasance.png', `
+          <p>This piece depicts a ghost-like figure draped in flowing cloth, seated solemnly among ancient ruins.</p>
+          <img src='../art_IMG/Abioticrenasance.png' style='width:100%; border-radius:8px; margin-top:10px;'>
+          <p>Its ethereal form holds the Abiotic logo delicately, as if protecting or presenting it to the viewer.</p>
+          <p>The contrast between the decaying stone environment and the smooth, spectral fabric evokes <strong>legacy, memory, and timeless guardianship</strong>.</p>
+        `)">
+          <img src="../art_IMG/Abioticrenasance.png" alt="Abiotics Renaissance">
+          <div class="title-bar"><h3>Abiotics Renaissance</h3></div>
+        </div>
+
+        <div class="art-card" onclick="openModal('Silent Watchers', '../art_IMG/Abiotic_Ruins.png', `
+          <p>This artwork features two angel statues in a bright, tranquil environment.</p>
+          <img src='../art_IMG/Abiotic_Ruins.png' style='width:100%; border-radius:8px; margin-top:10px;'>
+          <p>Using 3D assets, I arranged the statues to convey <strong>serenity</strong> and <strong>gentle reverence</strong>.</p>
+          <p>The soft lighting enhances the peaceful mood, making this piece feel almost sacred.</p>
+        `)">
+          <img src="../art_IMG/Abiotic_Ruins.png" alt="Silent Watchers">
+          <div class="title-bar"><h3>Silent Watchers</h3></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h2 id="modal-title"></h2>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Lifeportz. All rights reserved.</p>
+  </footer>
+  <script>
+    window.onload = () => {
+      const modal = document.getElementById("modal");
+      const modalTitle = document.getElementById("modal-title");
+      const modalBody = document.getElementById("modal-body");
+
+      window.openModal = function(title, imgSrc, htmlContent) {
+        modalTitle.textContent = title;
+        modalBody.innerHTML = htmlContent;
+        modal.style.display = "flex";
+      };
+
+      window.closeModal = function() {
+        modal.style.display = "none";
+      };
+
+      window.onclick = function (event) {
+        if (event.target === modal) {
+          closeModal();
+        }
+      };
+    };
+  </script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/png" href="../Images/Logo.png">
+  <title>My 3D modeling | Lifeportz portfolio</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../3d-modeling.html">3D Modeling</a>
+        <a href="../3d-art.html">3D Art</a>
+        <a href="../level-design.html">Level Design</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+    </nav>
+    <div class="nav-socials">
+      <a href="https://lifeport-z.booth.pm/" target="_blank"><i class="fas fa-shopping-cart"></i></a>
+      <a href="https://www.instagram.com/lifeportz/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com/Lifeportz" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/thomasbrown-lifeportz/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/astr6id" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </header>
+
+  <main>
+    <section id="roadmap">
+      <h2>3D modeling for Abiotic</h2>
+      <div class="roadmap-container">
+        <div class="roadmap-item">
+          <img src="../model_IMG/Funktion mk2.png" alt="">
+          <div class="roadmap-text">
+            <h3>Lunktion F118 Mk2</h3>
+            <p style="margin-bottom: 20px;">The Funktion F118 Mk2 is an iconic subwoofer, well known throughout the rave and live music industry for its deep, powerful bass and durable build quality. I chose to model this speaker as a personal project to test and refine my skills in creating high-quality low-poly assets suitable for real-time applications.</p>
+            <p style="margin-bottom: 20px;">By studying the original schematics and technical drawings provided by Funktion, I was able to accurately determine the precise 1:1 scale proportions for their speaker systems. This allowed me to recreate every dimension with exact fidelity. I then focused on building clean and efficient topology throughout the entire model, ensuring it would hold up under close inspection and be suitable for both rendering and potential game or environment integration. Through this process, I was able to produce a highly detailed and beautifully realistic set of Funktion speakers that remain true to their original design while showcasing my ability to interpret complex technical references into precise, optimized 3D assets.</p>
+            <p style="margin-bottom: 20px;">Overall, this project was a valuable opportunity to strengthen my low-poly modelling techniques, improve my understanding of real-world product replication, and develop an asset that can be used within environments requiring realistic stage and audio equipment props. It also allowed me to practice working to real-world scale, which is critical for environmental storytelling and believable scene composition.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section id="roadmap">
+  <div class="roadmap-container">
+    <div class="roadmap-item">
+      <img src="../model_IMG/FuzeBox Render 1.png" alt="">
+      <div class="roadmap-text">
+        <h3>Fuze Box | Eletrical Box</h3>
+        <p style="margin-bottom: 20px;">I created this Fuze box prop in under an hour to challenge my speed modelling workflow. Starting in Blender with a simple cube, I quickly blocked out the overall shape and ensured the proportions were functional and readable. I used efficient hard surface modelling techniques, including bevels and weighted normals, to maintain clean topology without adding unnecessary geometry, keeping the asset optimised and ready for potential game use.</p>
+        <p style="margin-bottom: 20px;">For this piece, I didn’t use any texturing software like Substance Painter. Instead, I assigned basic default colours directly in Blender to represent the materials quickly and keep the focus entirely on modelling and design. I added two simple holes on the sides for extra realism and functionality detail without overcomplicating the model. This approach allowed me to spend the limited time refining the silhouette and ensuring the prop felt believable and practical within its intended environment context.</p>
+        <p style="margin-bottom: 20px;">I chose to create this Fuze box as a quick prop exercise to improve my modelling speed and strengthen my workflow under time constraints. Small, grounded props like this are essential in environment art, and practising rapid iterations without relying on complex texturing helps me solidify my base modelling fundamentals. This challenge demonstrates my ability to produce a clean, efficient asset rapidly while focusing on strong design choices and presentation.</p>
+        <p style="margin-bottom: 20px;">Overall, this exercise helped me build confidence in my ability to create simple yet purposeful props that could easily populate a game scene. It reminded me of the importance of clean shapes, proportion accuracy, and quick decision-making, even when working without advanced texturing. I will continue creating small props like this to push my efficiency further and enhance the consistency of my portfolio pieces.</p>
+      </div>
+    </div>
+  </div>
+</section>
+  </main> 
+
+  <!-- Modal Structure -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <img id="modalImage" src="" alt="">
+      <p id="modalDescription"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Lifeportz. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function openModal(title, imgSrc, description) {
+      document.getElementById('myModal').style.display = 'block';
+      document.getElementById('modalTitle').innerText = title;
+      document.getElementById('modalImage').src = imgSrc;
+      document.getElementById('modalDescription').innerText = description;
+    }
+
+    function closeModal() {
+      document.getElementById('myModal').style.display = 'none';
+    }
+
+    // Close modal when clicking outside content
+    window.onclick = function(event) {
+      const modal = document.getElementById('myModal');
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>

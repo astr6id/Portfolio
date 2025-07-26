@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/png" href="../Images/Logo.png">
+  <title>Euro-Corp 3D Modeling | Lifeportz Portfolio</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../3d-modeling.html">3D Modeling</a>
+        <a href="../3d-art.html">3D Art</a>
+        <a href="../level-design.html">Level Design</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+    </nav>
+    <div class="nav-socials">
+      <a href="https://lifeport-z.booth.pm/" target="_blank"><i class="fas fa-shopping-cart"></i></a>
+      <a href="https://www.instagram.com/lifeportz/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com/Lifeportz" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/thomasbrown-lifeportz/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/astr6id" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </header>
+
+  <main>
+    <section id="roadmap">
+      <h2>3D modeling for Euro-Corp</h2>
+      <div class="roadmap-container">
+        <div class="roadmap-item">
+          <img src="../model_IMG/eurocorpVestibulewide.png" alt="">
+          <div class="roadmap-text">
+            <h3>Euro-Corp Vestibule</h3>
+            <p style="margin-bottom: 20px;">This 3D club environment was created for a client project to develop a modern and atmospheric club scene suitable for real-time game engines and cinematic use. The design focuses on clean realism with subtle storytelling elements, featuring concrete architecture, patterned flooring, and carefully arranged props to create a believable and immersive space.</p>
+            <p style="margin-bottom: 20px;">Red and blue accent lighting adds a dynamic club feel, while a custom volumetric lighting system made entirely from particles produces soft beams and haze for depth and mood. Cable details run naturally through the environment, enhancing realism without creating clutter, and every prop placement was intentional to support the overall narrative and aesthetic goals.</p>
+            <p style="margin-bottom: 20px;">As part of the project, I created custom textures for many of the props to ensure consistency with the environment’s tone and lighting. This included weathered plastic materials, brushed metals, and subtle roughness variations to add realism under club lighting conditions. These textures were optimized for real-time rendering while maintaining a high level of visual fidelity.</p>
+            <p style="margin-bottom: 20px;">I also added clothing, such as a bucket hat asset placed on the upper rafters, to demonstrate how character props integrate within the scene. This helped bring the club to life by suggesting human presence and use, supporting the client’s goal of showcasing the environment as a lived-in, functional space for their virtual project.</p>
+            <p style="margin-bottom: 20px;">This project not only allowed me to refine my environment art, particle lighting, and scene composition skills, but also delivered professional results for my client. You can view their testimonial for this work under the Euro-Corp name in the about me section of my portfolio to see their feedback on the quality and attention to detail I provided.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main> 
+
+  <!-- Modal Structure -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <img id="modalImage" src="" alt="">
+      <p id="modalDescription"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Lifeportz. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function openModal(title, imgSrc, description) {
+      document.getElementById('myModal').style.display = 'block';
+      document.getElementById('modalTitle').innerText = title;
+      document.getElementById('modalImage').src = imgSrc;
+      document.getElementById('modalDescription').innerText = description;
+    }
+
+    function closeModal() {
+      document.getElementById('myModal').style.display = 'none';
+    }
+
+    // Close modal when clicking outside content
+    window.onclick = function(event) {
+      const modal = document.getElementById('myModal');
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>

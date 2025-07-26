@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3D Modeling | Lifeport-z portfolio</title>
+  <link rel="icon" type="image/png" href="Images/Logo.png">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="3d-modeling.html">3D Modeling</a>
+        <a href="3d-art.html">3D Art</a>
+        <a href="level-design.html">Level Design</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+    <div class="nav-socials">
+      <a href="https://lifeport-z.booth.pm/" target="_blank"><i class="fas fa-shopping-cart"></i></a>
+      <a href="https://www.instagram.com/lifeportz/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com/Lifeportz" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/thomasbrown-lifeportz/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/astr6id" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="subcategories">
+        <h2>3D Modeling Contributions</h2>
+
+        <div class="subcategory-card">
+            <div class="subcategory-info">
+                <h3>Baptizm - 3D Modeling</h3>
+                <p>Creating 3D environments, working on animations and creating some of their promotional material.</p>
+            </div>
+            <a href="3DModPages/baptizm-modeling.html" class="go-button">
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="subcategory-card">
+            <div class="subcategory-info">
+                <h3>Euro-Corp - 3D Modeling / Level design</h3>
+                <p>Creating 3D environments, for a virtual club.</p>
+            </div>
+            <a href="3DModPages/eurocorp-modeling.html" class="go-button">
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="subcategory-card">
+            <div class="subcategory-info">
+                <h3>Abiotic - 3D Design / 3D modeling / Texturing</h3>
+                <p>Creating virtual game ready environments / Assets and props.</p>
+            </div>
+                <a href="3DModPages/abiotic-modeling.html" class="go-button">
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="subcategory-card">
+            <div class="subcategory-info">
+                <h3>Personal Projects</h3>
+                <p>Virtual game ready environments / Assets and props.</p>
+                <p>Here you can interact with my assets directly.</p>
+            </div>
+                <a href="3DModPages/personal-modeling.html" class="go-button">
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Thomas Brown | Lifeport-z</p>
+  </footer>
+  <button id="backToTop" title="Go to top">&#8679;</button>
+</body>
+</html>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+  const backToTop = document.getElementById("backToTop");
+
+  // Show or hide on scroll
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+      backToTop.style.display = "flex";
+      backToTop.style.alignItems = "center";
+      backToTop.style.justifyContent = "center";
+    } else {
+      backToTop.style.display = "none";
+    }
+  });
+
+  // Smooth scroll to top on click
+  backToTop.addEventListener("click", (event) => {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+  });
+
+</script>
+<script src="script.js"></script>

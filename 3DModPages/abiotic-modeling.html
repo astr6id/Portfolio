@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/png" href="../Images/Logo.png">
+  <title>Abiotic 3D Modeling | Lifeportz Portfolio</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../3d-modeling.html">3D Modeling</a>
+        <a href="../3d-art.html">3D Art</a>
+        <a href="../level-design.html">Level Design</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+    </nav>
+    <div class="nav-socials">
+      <a href="https://lifeport-z.booth.pm/" target="_blank"><i class="fas fa-shopping-cart"></i></a>
+      <a href="https://www.instagram.com/lifeportz/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com/Lifeportz" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/thomasbrown-lifeportz/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/astr6id" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </header>
+
+  <main>
+    <section id="roadmap">
+      <h2>3D modeling for Abiotic</h2>
+      <div class="roadmap-container">
+        <div class="roadmap-item">
+          <img src="../model_IMG/AbioticInterior.png" alt="">
+          <div class="roadmap-text">
+            <h3>Abiotics Last Stop</h3>
+            <p style="margin-bottom: 20px;">The last stop is a personal environment art project focused on creating a dirty, grimey, industrial underground space with a strong atmospheric presence. I wanted to design a scene that feels raw, heavy, and immersive – something that immediately places the viewer in a cold, damp industrial setting. My goal was to improve my ability to build medium-to-large scale environments with believable materials and lighting, and to challenge myself to push detail while maintaining an efficient low-poly workflow suitable for games.</p>
+            <p style="margin-bottom: 20px;">I began by researching real-world references of underground industrial sites, abandoned utility tunnels, and brutalist-inspired support structures to inform the architectural style and material language. Starting with a blockout, I focused on getting the scale and composition right, making sure the environment felt decently sized and believable while guiding the viewer’s eye through strong shapes and structural flow.</p>
+            <p style="margin-bottom: 20px;">Once the blockout was finalised, I modelled modular pieces to streamline asset creation, allowing me to populate the scene efficiently without sacrificing variety. I prioritised clean, optimised topology to keep the environment game-ready and suitable for engines like Unity or Unreal.</p>
+            <p style="margin-bottom: 20px;">For materials, I created layered shaders with dirt, rust, and grime to achieve the worn industrial look I envisioned. Decals were added strategically to enhance realism, such as leaks, rust drips, and damaged concrete edges. This step was crucial to break up uniform surfaces and communicate age and environmental storytelling.</p>
+            <p style="margin-bottom: 20px;">Lighting was key to establishing the underground atmosphere. I used focused point lights and softer bounce to create pockets of illumination against deep shadows, evoking a sense of depth and mystery while highlighting important areas of the environment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="roadmap">
+      <div class="roadmap-container">
+        <div class="roadmap-item">
+          <img src="../model_IMG/Neon Ally.png" alt="">
+          <div class="roadmap-text">
+            <h3>Neon kage</h3>
+            <p style="margin-bottom: 20px;">This Japanese-inspired environment was created as a personal project to explore traditional-meets-modern architectural design in an urban setting. I wanted to build a scene that captures the feeling of walking through a narrow city alleyway, descending down a hidden staircase, and entering an underground club – creating a journey that feels authentic, atmospheric, and culturally grounded. My goal was to strengthen my skills in environment storytelling, modular design, and lighting within urban Japanese aesthetics.</p>
+            <p style="margin-bottom: 20px;">I began by gathering extensive references of Japanese alleyways, nightlife streets, and small hidden clubs to understand their structural layouts, signage styles, and material details. Starting with a blockout, I planned the flow carefully – beginning with the alley entrance, leading down a staircase framed by industrial railings and concrete walls, and finally opening into a dimly lit underground club interior.</p>
+            <p style="margin-bottom: 20px;">For modelling, I focused on modular pieces to efficiently build repeating assets like railings, walls, shopfront panels, and signs. This allowed me to maintain visual consistency while quickly iterating the environment layout. Clean, low-poly topology ensured the scene remained optimised for game engines.</p>
+            <p style="margin-bottom: 20px;">Materials were created with layered dirt, faded paint, and subtle emission for signage to evoke the worn but vibrant aesthetic of urban backstreets. I paid close attention to decal placement for leaks, grime, and chipped paint to add realism and environmental storytelling.</p>
+            <p style="margin-bottom: 20px;">Lighting played a crucial role in setting the mood. I used warm scattered light sources in the alley to contrast against the cooler, darker descent down the stairs, creating a cinematic transition into the underground club space where neon and low ambient light establish an immersive nightlife vibe.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main> 
+
+  <!-- Modal Structure -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <img id="modalImage" src="" alt="">
+      <p id="modalDescription"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Lifeportz. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function openModal(title, imgSrc, description) {
+      document.getElementById('myModal').style.display = 'block';
+      document.getElementById('modalTitle').innerText = title;
+      document.getElementById('modalImage').src = imgSrc;
+      document.getElementById('modalDescription').innerText = description;
+    }
+
+    function closeModal() {
+      document.getElementById('myModal').style.display = 'none';
+    }
+
+    // Close modal when clicking outside content
+    window.onclick = function(event) {
+      const modal = document.getElementById('myModal');
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>

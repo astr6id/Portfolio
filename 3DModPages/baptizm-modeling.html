@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/png" href="../Images/Logo.png">
+  <title>Baptizm 3D Modeling | Lifeportz Portfolio</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../3d-modeling.html">3D Modeling</a>
+        <a href="../3d-art.html">3D Art</a>
+        <a href="../level-design.html">Level Design</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+    </nav>
+    <div class="nav-socials">
+      <a href="https://lifeport-z.booth.pm/" target="_blank"><i class="fas fa-shopping-cart"></i></a>
+      <a href="https://www.instagram.com/lifeportz/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com/Lifeportz" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/thomasbrown-lifeportz/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/astr6id" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </header>
+
+  <main>
+    <section id="roadmap">
+      <h2>3D modeling for Baptizm</h2>
+      <div class="roadmap-container">
+        <div class="roadmap-item">
+          <img src="../model_IMG/BaptizmBridgescene.png" alt="">
+          <div class="roadmap-text">
+            <h3>Ascendace Bridge Scene</h3>
+            <p style="margin-bottom: 20px;">The Baptizm Bridge Scene was created to celebrate their two-year anniversary, with a strong focus on attention to detail, dynamic lighting, and cinematic animation.</p>
+            <p style="margin-bottom: 20px;">We began by blocking out the scene to establish the layout of the brutalist landscape and towering structures. This was essential to quickly iterate on the composition and scale before investing time into detailed assets, ensuring that every element served the overall visual storytelling.</p>
+            <p style="margin-bottom: 20px;">Once the blocking was in place, we timed out the camera animation early to set the pacing and mood. Locking down camera timings before detailing allowed us to build around the intended movement, ensuring that key frames highlighted the environments scale and design intent effectively.</p>
+            <p style="margin-bottom: 20px;">After the camera animation was finalised, we moved on to polishing the bridge and brutalist building, focusing on readability and strong architectural forms to align with Baptizm’s aesthetic. Their iconic mannequin was introduced as the main character to create brand recognition and anchor the viewer within the scene, giving a human scale reference against the vast dystopian backdrop.</p>
+            <p style="margin-bottom: 20px;">We aimed to create a sci-fi environment that excites and energises viewers, which is why we used high-intensity camera shots to evoke speed and power, paired with dramatic lighting to emphasise depth, material contrast, and atmosphere.</p>
+            <p style="margin-bottom: 20px;">The music was produced by Baptizms own in-house DJs, adding authenticity and a cohesive brand feel to the final video.</p>
+            <p style="margin-bottom: 20px;">To further enhance the cinematic quality, we added subtle particle effects and atmospheric fog to reinforce scale and realism, while carefully directing light to create dramatic silhouettes that intensified the sci-fi mood.</p>
+            <p style="margin-bottom: 20px;">Overall, this piece was designed to not only celebrate their milestone anniversary, but to also showcase Baptizms brand identity through powerful visuals, immersive sound design, and intentional camera direction – creating an impactful cinematic experience that connects deeply with their community.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="roadmap">
+      <div class="roadmap-container">
+        <div class="roadmap-item">
+          <img src="../model_IMG/BaptizmPoster1.png" alt="">
+          <div class="roadmap-text">
+            <h3>Assembly 012</h3>
+            <p style="margin-bottom: 20px;">This project began with gathering grunge aesthetic references to inform the 3D modelling approach. I focused on images that conveyed scale, heavy materiality, and dystopian brutalism. Collecting these references was essential to understand the forms and surface details needed, ensuring I had a clear design direction before starting any modelling work.</p>
+            <p style="margin-bottom: 20px;">With references in place, I began blocking out the scene in 3D to establish the core composition and spatial relationships. Blocking early allowed me to experiment with proportions and negative space efficiently, ensuring that the environment felt balanced and visually strong before committing to detailed geometry.</p>
+            <p style="margin-bottom: 20px;">For the main structural element, I modelled a large V-shaped brutalist support beam. This design choice was intentional to create a powerful visual split between the mannequins, symbolising their contrasting personalities while also anchoring the composition. The V-shape introduced dynamic tension and directed the viewer’s eye naturally towards the centre.</p>
+            <p style="margin-bottom: 20px;">After establishing the primary forms, I refined the models by adding supporting structures, bevels, and realistic edge wear to break up overly clean geometry. This step was crucial to achieving a believable brutalist aesthetic, as subtle chamfers and imperfections catch light in a way that enhances realism.</p>
+            <p style="margin-bottom: 20px;">Finally, I ensured all assets were optimised for rendering, with clean topology and UVs laid out logically for texturing later. Each modelling decision in this project was made to support strong visual storytelling, communicate material weight and scale effectively, and align with Baptizm’s distinct, brand aesthetic.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main> 
+
+  <!-- Modal Structure -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <img id="modalImage" src="" alt="">
+      <p id="modalDescription"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Lifeportz. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function openModal(title, imgSrc, description) {
+      document.getElementById('myModal').style.display = 'block';
+      document.getElementById('modalTitle').innerText = title;
+      document.getElementById('modalImage').src = imgSrc;
+      document.getElementById('modalDescription').innerText = description;
+    }
+
+    function closeModal() {
+      document.getElementById('myModal').style.display = 'none';
+    }
+
+    // Close modal when clicking outside content
+    window.onclick = function(event) {
+      const modal = document.getElementById('myModal');
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
